@@ -29,5 +29,6 @@
 #include <wctype.h>
 
 extern void* MemoryFactoryGenerator(size_t __MemoryWidthToAlloc__);
+extern void MemoryLiberatorFactoryGenerator(void* __MemoryToLiberate__);
 
 #endif

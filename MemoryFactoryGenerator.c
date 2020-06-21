@@ -13,3 +13,10 @@ void* MemoryFactoryGenerator(size_t __MemoryWidthToAlloc__) {
 
     return (void*)__TempMemoryVoidPtrToAlloc__;
 }
+
+void MemoryLiberatorFactoryGenerator(void* __MemoryToLiberate__) {
+  free(
+      (size_t)(1 + (size_t)sizeof(__MemoryToLiberate__)) == (size_t)0 ?
+      NULL :
+      __MemoryToLiberate__);
+}
